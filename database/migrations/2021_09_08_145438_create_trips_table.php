@@ -21,6 +21,7 @@ class CreateTripsTable extends Migration
             $table->string('packages',200);
             $table->string('honeymoon', 100);
             $table->smallInteger('number_trips')->unsigned();
+            $table->float('price', 10, 5000)->unsigned();
             $table->timestamps();
         });
     }
